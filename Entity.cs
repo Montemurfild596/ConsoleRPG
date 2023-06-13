@@ -15,5 +15,10 @@ namespace ConsoleRPG {
         }
         public virtual void Attack(Entity otherEntity) {}
 
+        public override string ToString()
+        {
+            return $"{Name} : {Health} | {Armor} | {Damage}";
+        }
+
     }
 }
